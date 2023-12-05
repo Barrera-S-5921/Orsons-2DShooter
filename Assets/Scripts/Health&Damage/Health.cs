@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using TMPro; 
 
 /// <summary>
 /// This class handles the health state of a game object.
@@ -34,6 +35,10 @@ public class Health : MonoBehaviour
     [Tooltip("The maximum number of lives this health can have")]
     public int maximumLives = 5;
 
+    public TextMeshProUGUI lifeText;
+    public GameObject player;
+    public bool isPlayer = false;
+
     /// <summary>
     /// Description:
     /// Standard unity funciton called before the first frame update
@@ -45,6 +50,10 @@ public class Health : MonoBehaviour
     void Start()
     {
         SetRespawnPoint(transform.position);
+        if (isPlayer)
+        {
+            lifeText.text = "Lives: " + player.GetComponent<Health>().currentLives.ToString();
+        }
     }
 
     /// <summary>
@@ -110,6 +119,10 @@ public class Health : MonoBehaviour
     {
         transform.position = respawnPosition;
         currentHealth = defaultHealth;
+        if (isPlayer)
+        {
+            lifeText.text = "Lives: " + player.GetComponent<Health>().currentLives.ToString();
+        }
     }
 
     /// <summary>

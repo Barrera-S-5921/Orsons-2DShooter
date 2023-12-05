@@ -337,6 +337,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void GameOver()
     {
+        Debug.Log("Game Over");
         gameIsOver = true;
         if (gameOverEffect != null)
         {
