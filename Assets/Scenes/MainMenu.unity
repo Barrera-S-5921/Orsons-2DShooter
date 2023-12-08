@@ -221,7 +221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3936081894206324215, guid: 395330b6cfb66f246a4c7682cf797c5e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Respawners(H)
+      value: Endless(E)
       objectReference: {fileID: 0}
     - target: {fileID: 3936081894244248471, guid: 395330b6cfb66f246a4c7682cf797c5e, type: 3}
       propertyPath: m_Text
