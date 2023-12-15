@@ -195,6 +195,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Endless(E)
       objectReference: {fileID: 0}
+    - target: {fileID: 3936081893314831955, guid: 395330b6cfb66f246a4c7682cf797c5e, type: 3}
+      propertyPath: m_Text
+      value: Endless levels
+      objectReference: {fileID: 0}
     - target: {fileID: 3936081893650688906, guid: 395330b6cfb66f246a4c7682cf797c5e, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -215,13 +219,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Endless(H)
       objectReference: {fileID: 0}
+    - target: {fileID: 3936081894029090421, guid: 395330b6cfb66f246a4c7682cf797c5e, type: 3}
+      propertyPath: m_Text
+      value: Story Level
+      objectReference: {fileID: 0}
     - target: {fileID: 3936081894199955091, guid: 395330b6cfb66f246a4c7682cf797c5e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3936081894206324215, guid: 395330b6cfb66f246a4c7682cf797c5e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Endless(E)
+      value: TestMap
       objectReference: {fileID: 0}
     - target: {fileID: 3936081894244248471, guid: 395330b6cfb66f246a4c7682cf797c5e, type: 3}
       propertyPath: m_Text

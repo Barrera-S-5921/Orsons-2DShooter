@@ -8,6 +8,8 @@ using UnityEngine.InputSystem;
 /// </summary>
 public class Controller : MonoBehaviour
 {
+    public coinManager cm;
+
     [Header("GameObject/Component References")]
     [Tooltip("The animator controller used to animate the player.")]
     public RuntimeAnimatorController animator = null;
@@ -261,6 +263,15 @@ public class Controller : MonoBehaviour
                     myRigidbody.freezeRotation = true;
                 }
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("ShipPart"))
+        {
+            Destroy(other.gameObject);
+            cm.coinCount++;
         }
     }
 }
